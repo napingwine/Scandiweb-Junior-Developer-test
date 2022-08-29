@@ -1,0 +1,82 @@
+@import '../../style/_variables';
+
+.card {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  width: fit-content;
+  position: relative;
+  text-decoration: none;
+  color: $textPrimary;
+  font-family: 'Raleway', sans-serif;
+  line-height: 160%;
+
+  &:hover {
+    box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+    cursor: pointer;
+
+    & .addToCart {
+      display: flex;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 160%;
+  
+  .name {
+    font-weight: 300;
+  }
+
+  .price {
+    font-weight: 500;  
+  }
+}
+
+.image {
+  height: 330px;
+  width: 354px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  overflow: hidden;
+
+  &>img {
+    height: 100%;
+  }
+}
+
+.addToCart {
+  background: $secondary;
+  border: none;
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 72px;
+  right: 31px;
+  display: none;
+  cursor: pointer;
+}
+
+.notInStockOverlay {
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $outOfStock;
+  background-color: $outOfStockBackground;
+}

@@ -1,0 +1,102 @@
+@import '../../style/_variables';
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.info {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+
+  &>div {
+    padding-bottom: 20px;
+  }
+
+  &.mini {
+    &>div {
+      padding-bottom: 5px;
+    }
+  }
+
+  .brandName {
+    font-weight: bold;
+    font-size: 30px;
+
+    &.mini {
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+
+  .itemName {
+    font-size: 30px;
+
+    &.mini {
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+
+  .itemPrice {
+    font-weight: 700;
+
+    &.mini {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}
+
+.amount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 24px;
+  font-size: 24px;
+
+  &.mini {
+    font-size: 16px;
+  }
+}
+
+.button {
+  height: 45px;
+  width: 45px;
+  background: transparent;
+  border: 1px solid $primary;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.mini {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.vectorMinus,
+.vectorPlus {
+  position: absolute;
+  top: 50%;
+  left: 33.333%;
+  border: 1px solid $primary;
+  height: 1px;
+  width: 15px;
+
+  &.mini {
+    width: 8px;
+    left: 33.333%;
+
+  }
+}
+
+.vectorPlus {
+  transform: rotate(90deg);
+}

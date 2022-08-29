@@ -1,0 +1,57 @@
+.productPage {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding-top: 80px;
+
+  .primary_btn {
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  .outOfStock {
+    padding: 20px;
+    margin-bottom: 40px;
+    opacity: 0.7;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+
+  &>div {
+    margin-bottom: 40px;
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+
+  .brand {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .name {
+    font-weight: 400;
+    font-size: 30px;
+  }
+}
+
+.priceTitle {
+  font-family: 'Roboto_condensed', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  padding-bottom: 10px;
+}
+
+.priceValue {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+}

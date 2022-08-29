@@ -1,0 +1,73 @@
+@import '../../style/_variables';
+
+.attribute_button {
+  padding: 15px;
+  background: transparent;
+  border: 1px solid $primary;
+  position: relative;
+  margin-right: 8px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-family: 'Source_Sans_Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  
+  &.mini{
+    padding: 5px;
+    height: auto;
+    font-size: 14px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.attribute_button_color {
+  border: 1px solid transparent;
+  padding: 1px;
+  background-color: transparent;
+  margin-right: 6px;
+
+  &>div {
+    height: 32px;
+    width: 32px;
+  }
+
+  &.mini {
+    &>div {
+      height: 16px;
+      width: 16px;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.activeAttribute {
+  background-color: $primary;
+  color: $white_text;
+}
+
+.activeAttributeSwatch {
+  border-color: $secondary;
+}
+
+
+.attribute {
+  display: flex;
+  flex-direction: column;
+}
+
+.attributeName {
+  font-weight: 700;
+  padding-bottom: 5px;
+  font-family: 'Roboto_condensed', sans-serif;
+
+
+  &.mini {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,52 @@
+@import '../../../style/_variables';
+
+.miniCartWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+  background-color: $popUp-bg;
+}
+
+.container {
+  position: relative;
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.miniCart {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  background-color: $mini_cart_bg;
+  padding: 32px 16px;
+  margin-right: -30px;
+  width: 400px;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.title {
+  margin-bottom: 30px;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 30px 0;
+  &__amount {
+    font-weight: 700;
+  }
+}

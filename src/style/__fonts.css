@@ -1,0 +1,22 @@
+@import '../asset/fonts/raleway/raleway.css';
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../asset/fonts/roboto/Roboto_400.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto_condensed';
+  src: url('../asset/fonts/roboto_condensed/roboto-condensed_400.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Source_Sans_Pro';
+  src: url('../asset/fonts/source_sans_pro/source-sans-pro_400.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 400;
+}

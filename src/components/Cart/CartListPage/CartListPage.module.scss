@@ -1,0 +1,50 @@
+@import '../../../style/_variables';
+
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 160%;
+  padding-top: 80px;
+  margin-bottom: 55px;
+}
+
+.separator {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: $separatorColor;
+}
+
+.final {
+  padding: 32px 0;
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+
+  &>* {
+    margin-bottom: 8px;
+  }
+
+  &__tax {
+    font-weight: 400;
+
+    &>span {
+      font-weight: 700;
+    }
+  }
+
+  &__quantity {
+    font-weight: 400;
+
+    &>span {
+      font-weight: 700;
+    }
+  }
+
+  &__total {
+    font-weight: 500;
+
+    &>span {
+      font-weight: 700;
+    }
+  }
+}

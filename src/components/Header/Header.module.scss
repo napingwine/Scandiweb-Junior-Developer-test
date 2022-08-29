@@ -1,0 +1,122 @@
+@import '../../style/_variables';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+
+  button {
+    &>* {
+      font-family: 'Raleway sans-serif';
+      font-weight: 400;
+    }
+  }
+}
+
+.categoryButton {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 120%;
+  border-bottom: 2px solid transparent;
+  padding: 15px;
+  color: $primary;
+
+  &:hover {
+    cursor: pointer;
+    color: $secondary;
+    border-bottom: $secondary 2px solid;
+  }
+}
+
+.active {
+  color: $secondary;
+  border-bottom: $secondary 2px solid;
+  font-weight: 600;
+}
+
+.currenciesAndCart {
+  display: flex;
+}
+
+.dropdown {
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  filter: drop-shadow(0px 4px 35px rgba(168, 172, 176, 0.19));
+  z-index: 100;
+}
+
+.dropdown .cHover {
+  color: $primary;
+  cursor: pointer;
+}
+
+.dropdown .cHover>span {
+  text-decoration: underline dashed;
+}
+
+.dropdown .cHover::after {
+  content: '\25BC';
+  font-size: 50%;
+  padding: 10px;
+}
+
+.cList {
+  span {
+    font-family: 'Roboto sans-serif';
+    font-weight: 500;
+  }
+}
+
+.dropdown .cList {
+  position: absolute;
+  display: none;
+  width: 110px;
+  background: $price-selector-bg;
+  box-sizing: border-box;
+  position: absolute;
+  top: 100%;
+  right: -33px;
+  z-index: 10;
+}
+
+.dropdown .cList span {
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.dropdown .cList span:hover {
+  background-color: $price-selector-bg_hover;
+  cursor: pointer;
+}
+
+.dropdown:hover .cList {
+  display: block;
+}
+
+.dropdown:hover .cHover::after {
+  content: '\25B2';
+}
+
+.cart {
+  position: relative;
+}
+
+.totalItemsInCart {
+  color: $white_text;
+  background-color: $BG_for_white_text;
+  font-size: 14px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  right: -50%;
+  top: -50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
